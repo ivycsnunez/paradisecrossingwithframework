@@ -146,11 +146,12 @@ a {
   .brand h1,
   .brand p {
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.3;
   }
   nav a {
-    padding: 0.25rem;
+    padding: 0.2rem;
     margin: 0;
+    font-size: small;
   }
   /* FOOTER */
   .footer {
