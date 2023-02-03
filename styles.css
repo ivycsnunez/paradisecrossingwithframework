@@ -152,7 +152,15 @@ a {
     padding: 0.2rem;
     margin: 0;
     font-size: small;
+    flex-wrap: nowrap;
   }
+
+  /* IMAGES */
+  img {
+    border: 0.2rem solid #3b2424;
+    margin: 0 3rem;
+  }
+
   /* FOOTER */
   .footer {
     display: block;
@@ -227,16 +235,21 @@ a {
 
 /* MEDIUM DEVICES */
 @media all and (min-width: 768px) {
+  /* NAVBAR */
+  nav a {
+    font-size: large;
+  }
   /* IMAGES */
   .images {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   img {
-    border: 0.2rem solid #3b2424;
-    margin: 0 3rem;
+    margin-top: 0.5rem;
   }
+
   /* FOOTER */
   .footer {
     display: block;
@@ -297,6 +310,11 @@ a {
   .brand h1,
   .brand p {
     text-align: left;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 
   /* LINE HEIGHT */
