@@ -1,0 +1,276 @@
+/* REFERENCES */
+/* COLORS: #82dc82, #00aaff, #603939, #5a5858, #dede9f, #3b2424*/
+/* DIFFERENT SCREEN WIDTH: 991px, 768px */
+/* UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arvo", serif;
+  color: black;
+  text-align: center;
+  line-height: 2;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #82dc82;
+}
+
+.brand {
+  text-align: left;
+}
+
+.brand p {
+  color: #3b2424;
+  font-weight: bolder;
+}
+
+h1 {
+  color: #603939;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  background-color: #00aaff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.active {
+  background-color: #dede9f;
+  color: #603939;
+}
+
+/* MAIN CONTENT */
+
+/* LEFT SIDEBAR */
+
+.left-sidebar {
+  background-image: url("images/falling_leaves.png");
+  padding: 2rem 3rem;
+}
+
+h2 {
+  color: #603939;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+}
+
+/* IMAGES */
+
+img {
+  width: 10rem;
+  height: 10rem;
+  margin: 0.5rem;
+}
+
+figcaption {
+  font-size: small;
+  color: #3b2424;
+  font-weight: bolder;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+}
+
+/* MAIN */
+
+.main {
+  background: url("images/animalcrossingbgpink.png"), no-repeat;
+  padding: 2rem 3rem;
+}
+
+/* RIGHT SIDEBAR */
+
+.right-sidebar {
+  background: url("images/animalcrossingbggreen.png");
+  padding: 2rem 3rem;
+}
+
+.right-sidebar p,
+.left-sidebar p {
+  color: #3b2424;
+  font-weight: bolder;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #82dc82;
+  padding: 1rem 2rem;
+  display: flex;
+}
+
+.creator {
+  margin-top: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+}
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+  color: #3b2424;
+  text-shadow: 0.2rem 0.2rem 0.4rem #5a5858;
+  font-weight: bold;
+}
+
+.about,
+.links,
+.social {
+  width: 25%;
+  margin-right: 1.5rem;
+  text-align: left;
+}
+
+/* MEDIA QUERIES */
+
+/* SMALL DEVICES */
+@media only screen and (min-width: 600px) {
+  /* OVERALL */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* HEADER */
+  .header {
+    display: block;
+  }
+
+  .brand {
+    margin-bottom: 1rem;
+  }
+
+  .brand h1,
+  .brand p {
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  nav a {
+    padding: 0.25rem;
+    margin: 0;
+  }
+
+  /* FOOTER */
+  .footer {
+    display: block;
+  }
+
+  .about,
+  .links,
+  .social {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .creator {
+    margin: 0;
+  }
+}
+
+/* MEDIUM DEVICES */
+@media all and (min-width: 768px) {
+  /* IMAGES */
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img {
+    border: 0.2rem solid #3b2424;
+    margin: 0 3rem;
+  }
+  /* FOOTER */
+  .footer {
+    display: block;
+  }
+
+  .about,
+  .links,
+  .social {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* CREATOR */
+  .creator {
+    margin: 0;
+  }
+}
+
+/* LARGE DEVICES */
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  /* IMAGES */
+  .images {
+    flex-wrap: nowrap;
+  }
+}
+/* EXTRA LARGE DEVICES */
+@media all and (min-width: 1200px) {
+  /* OVERALL */
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* MAIN SECTIONS */
+  .header,
+  .footer {
+    width: 100%;
+    display: flex;
+  }
+  .left-sidebar {
+    order: 1;
+    flex: 1;
+  }
+  .main {
+    order: 2;
+    flex: 2;
+  }
+  .right-sidebar {
+    order: 3;
+    flex: 1;
+  }
+  .footer {
+    order: 4;
+  }
+
+  /* HEADER */
+
+  .brand h1,
+  .brand p {
+    text-align: left;
+  }
+
+  /* LINE HEIGHT */
+  h2,
+  p {
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+  }
+
+  /* FOOTER */
+  .about,
+  .links,
+  .social {
+    width: 25%;
+    margin: 0 auto;
+    text-align: left;
+  }
+}
