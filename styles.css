@@ -137,9 +137,45 @@ a {
 }
 
 /* MEDIA QUERIES */
+/* EXTRA SMALL DEVICES */
+@media all and (min-width: 400px) {
+  /* HEADER */
+  .header {
+    display: block;
+  }
+  .brand h1,
+  .brand p {
+    text-align: center;
+    line-height: 1.5;
+  }
+  nav a {
+    padding: 0.25rem;
+    margin: 0;
+  }
+  /* FOOTER */
+  .footer {
+    display: block;
+  }
+
+  .about,
+  .links,
+  .social {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .social {
+    font-size: smaller;
+  }
+
+  .creator {
+    margin: 0;
+  }
+}
 
 /* SMALL DEVICES */
-@media only screen and (min-width: 600px) {
+@media all and (min-width: 600px) {
   /* OVERALL */
   .flex-container {
     display: flex;
@@ -177,6 +213,10 @@ a {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+  }
+
+  .social {
+    font-size: medium;
   }
 
   .creator {
